@@ -31,6 +31,8 @@ let recipes = [
 
 // Each recipe should be in its own div, that can be recCont. We are declaring it here since we will want to change its value with each itteration of the loop.
 
-let recCont
-
+//let recCont
+document.getElementById("arrPrint").innerHTML = JSON.stringify(recipes, null, 2);
+for(let i = 0; i < recipes.length; i++)
+    console.log(recipes[i]);
 // HINT: Using .map will be very helpful when itterating through the ingredients array.
